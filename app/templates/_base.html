@@ -1,0 +1,15 @@
+<html>
+    <head>
+        {% load static %}
+        
+        <link rel='stylesheet' href="{% static '_css/_style.css' %}"/>
+        <link rel="shortcut icon" type="image/x-icon" href="{% static '_image/_imgIcon.png' %}" />
+
+        <title>{% block titulo %}{% endblock titulo %}</title>
+    </head>
+
+    <body>
+        {% block conteudo %}
+        {%  endblock conteudo%}
+    </body>
+</html>
